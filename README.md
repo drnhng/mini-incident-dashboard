@@ -51,7 +51,7 @@ The app should now be running at `http://localhost:3000` and connected to the Gr
 - Delete 1 or more selected incidents with confirmation
 - Filter incidents by severity or status
 - Pagination for browsing through incidents (5 per page)
-
+- Reusable UI Components
 ---
 
 ## 🛠 Approach
