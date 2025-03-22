@@ -58,10 +58,17 @@ The app should now be running at `http://localhost:3000` and connected to the Gr
 
 First, I set up the GraphQL backend using Express and Apollo Server, and created mock data based on the sample provided so I could test the frontend. With GraphQL Code Generator, I was able to generate types which i put in the /types folder.
 
-Then, I created an MVP version of the frontend with just the incident feed and a button to add a new incident. I created my own custom React hooks in the /hooks folder for the GraphQL queries and mutations, and connected them to the frontend components. This allows the query/mutation logic to be abstracted and made reusable.
+In my frontend design, I made sure to create reusable UI components to avoid code duplication and maintain clean code throughout. The stylesheets for each component are organized into the /styles folder.
 
-Once I verified the hooks were working correctly, I implemented the remaining functionality: filtering, deleting, and editing incidents. I decided to allow the user to select multiple incidents for the purpose of batch deleting incidents.
+I started by creating just the incident feed and a button to add a new incident. I created my own custom React hooks in the /hooks folder for the GraphQL queries and mutations, and connected them to the frontend components. This allowed the query/mutation logic to be abstracted and made reusable.
 
-I used a ContextProvider to manage UI-related state, such as which modals are open, which incident is selected, and what filters are applied.
+Once I verified the hooks were properly set up, I implemented the remaining functionality: filtering, deleting, and editing incidents. I decided to allow the user to select multiple incidents for the purpose of batch deleting incidents.
 
-Finally, I added a reusable pagination component to allow for browsing incidents in pages of 5.
+I used a ContextProvider to avoid prop drilling and manage UI states such as selected incidents and filters.
+
+Finally, I implemented a reusable pagination component to allow for browsing incidents in pages of 5.
+
+
+
+
+
