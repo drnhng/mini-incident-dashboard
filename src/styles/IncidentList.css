@@ -1,0 +1,63 @@
+.incident-list-container {
+    padding: 16px;
+  }
+  
+  .incidentlist-title {
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  
+  .add-button {
+    margin-bottom: 8px;
+    padding: 8px 8px;
+    background-color: blue; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .delete-button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: red; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .add-button:hover {
+    background-color: lightblue; 
+  }
+  
+  .incidentlist-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .incidentlist-table th,
+  .incidentlist-table td {
+    padding: 10px;
+  }
+  
+  .incidentlist-table thead {
+    background-color: lightgray; 
+  }
+  
+  .pagination {
+    margin-top: 18px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .filters-and-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  

@@ -1,0 +1,40 @@
+.filters-bar {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .filters-bar .filter-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filters-bar .filter-group span {
+    font-weight: 500;
+    margin-right: 8px;
+  }
+  
+  .filter-button {
+    margin-left: 8px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .filter-button.active {
+    background-color: grey;
+    color: #fff;
+  }
+  
+  .clear-filters-button {
+    padding: 4px 8px;
+    background-color: #6b7280;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

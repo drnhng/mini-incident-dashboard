@@ -1,0 +1,14 @@
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detail-label {
+    min-width: 90px;
+}
+.edit-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
