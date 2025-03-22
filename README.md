@@ -23,7 +23,7 @@ node server.js
 npm start
 ```
 
-The app should now be running at `http://localhost:3000` and connected to the mock GraphQL backend at `http:localhost:4000`.
+The app should now be running at `http://localhost:3000` and connected to the GraphQL backend at `http:localhost:4000/graphql`.
 
 ---
 
