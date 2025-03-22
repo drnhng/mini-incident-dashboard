@@ -54,7 +54,35 @@ let incidents = [
     description: "Login attempt from unrecognized IP",
     severity: "MEDIUM",
     status: "CLOSED",
-  }
+  },
+  {
+    id: "3",
+    title: "Suspicious Outbound Transfer",
+    description: "Suspicious outbound data transfer at unrecognized IP",
+    severity: "HIGH",
+    status: "OPEN",
+  },
+  {
+    id: "4",
+    title: "Malware Detection",
+    description: "Malware detected on endpoint",
+    severity: "HIGH",
+    status: "OPEN",
+  },
+  {
+    id: "5",
+    title: "Strange Network Activity",
+    description: "strange network activity detected",
+    severity: "MEDIUM",
+    status: "OPEN",
+  },
+  {
+    id: "6",
+    title: "Suspicious Network Traffic",
+    description: "Unusual network traffic detected",
+    severity: "LOW",
+    status: "CLOSED",
+  },
 ];
 
 const resolvers = {
