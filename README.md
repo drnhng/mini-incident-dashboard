@@ -13,7 +13,7 @@ cd mini-incident-dashboard
 npm install
 ```
 
-### 3. Start the Mock GraphQL Server
+### 3. Start the GraphQL Server
 ```bash
 node server.js
 ```
