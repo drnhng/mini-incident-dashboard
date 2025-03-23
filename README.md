@@ -32,13 +32,14 @@ The app should now be running at `http://localhost:3000`.
 ```
 /src
   /components                      # UI components
-    /DetailedSingleIncident.tsx    # Detailed View for each single incident, appears on click as a modal
+    /DetailedSingleIncident.tsx    # Detailed view for each single incident, appears on click as a modal
     /FiltersBar.tsx                # Filter selection by status and severity
     /IncidentForm.tsx              # Form for adding an incident, appears on click as a modal
     /IncidentList.tsx              # List of SingleIncidents for rendering all the incidents in a table
     /Pagination.tsx                # Pagination UI component
     /SeverityBadge.tsx             # Severity Badge with color coded indicator, used to display severity of an incident
     /SingleIncident.tsx            # Represents a single incident entry in the list
+
   /context                         # Context for shared state management
   /graphql                         # GraphQL queries and setup
   /hooks                           # Custom React hooks for GraphQL logic
