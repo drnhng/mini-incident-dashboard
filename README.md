@@ -62,7 +62,7 @@ In my frontend design, I made sure to create reusable UI components to avoid cod
 
 I started by creating just the incident feed and a button to add a new incident. I created my own custom React hooks in the /hooks folder for the GraphQL queries and mutations, and connected them to the frontend components. This allowed the query/mutation logic to be abstracted and made reusable.
 
-Once I verified the hooks were properly set up, I implemented the remaining functionality: filtering, deleting, and editing incidents. I decided to allow the user to select multiple incidents for the purpose of batch deleting incidents.
+Once I tested and verified the hooks were properly set up, I implemented the remaining functionality: filtering, deleting, and editing incidents. I decided to allow the user to select multiple incidents for the purpose of batch deleting incidents.
 
 I used a ContextProvider to avoid prop drilling and manage UI states such as selected incidents and filters.
 
