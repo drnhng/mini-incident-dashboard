@@ -54,6 +54,7 @@ The app should now be running at `http://localhost:3000`.
 ---
 
 ## Approach
+In my tech stack, I used React, Typescript, GraphQL with Apollo Server, and React Context.
 
 First, I set up the GraphQL backend using Express and Apollo Server, and created mock data based on the sample provided so I could test the frontend. With GraphQL Code Generator, I was able to generate types which i put in the /types folder.
 
