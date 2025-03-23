@@ -32,12 +32,12 @@ const IncidentList: React.FC = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
   const incidentsPerPage = 5;
-  const startIdx = (currentPage - 1) * incidentsPerPage;
-  const paginatedIncidents = incidentsFiltered.slice(startIdx, startIdx + incidentsPerPage);
+  const pageStart = (currentPage - 1) * incidentsPerPage;
+  const paginatedIncidents = incidentsFiltered.slice(pageStart, pageStart + incidentsPerPage);
 
 
   useEffect(() => {
-    setCurrentPage(1); 
+    setCurrentPage(1);
   }, [filters]);
 
   const handleBulkDelete = async () => {
@@ -58,8 +58,6 @@ const IncidentList: React.FC = () => {
 
   if (loading) return <p>Loading</p>;
   if (error) return <p>Error fetching incidents: {error.message}</p>;
-
-
 
   return (
     <div className="incident-list-container">
@@ -84,8 +82,8 @@ const IncidentList: React.FC = () => {
         </thead>
         <tbody>
           {paginatedIncidents.map((incident) => (
-  <SingleIncident key={incident.id} incident={incident} />
-))}
+            <SingleIncident key={incident.id} incident={incident} />
+          ))}
         </tbody>
       </table>
 

@@ -10,12 +10,10 @@ interface IncidentFormProps {
 
 const IncidentForm: React.FC<IncidentFormProps> = ({ onSuccess }) => {
   const { setIsFormOpen } = useIncidentContext();
-
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [severity, setSeverity] = useState<Severity>(Severity.Low);
   const [status, setStatus] = useState<Status>(Status.Open);
-
   const { addIncident } = useAddIncident();
 
   const handleSubmit = async (e: React.FormEvent) => {

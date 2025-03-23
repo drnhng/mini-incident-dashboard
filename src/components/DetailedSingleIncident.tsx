@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Incident, Severity, Status } from '../types/generated';
 import { useUpdateIncident } from '../hooks/useUpdateIncident';
-import '../styles/IncidentForm.css'; 
+import '../styles/IncidentForm.css';
 import '../styles/DetailedSingleIncident.css'
 import SeverityBadge from './SeverityBadge';
 
